@@ -1,0 +1,16 @@
+{
+  "artifact_directory": "artifacts/demo/artifacts/229b9a823f57",
+  "forecast_run": {
+    "cache_hits": 5600,
+    "calls": 0,
+    "failures": [],
+    "run_id": "229b9a823f57a3bac664d32ecaaf4b279cb107384fb582aae023df525de7924f"
+  },
+  "models_fitted": 7,
+  "snapshots": 560,
+  "status": "SYNTHETIC_DEMONSTRATION_ONLY",
+  "test_groups": 49,
+  "train_groups": 59,
+  "validation_groups": 28,
+  "warning": "This validates software execution only. It does NOT show forecasting accuracy on real markets."
+}

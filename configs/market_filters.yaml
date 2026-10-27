@@ -1,0 +1,10 @@
+# Apply only to metadata observed at or before each cutoff.
+# Empty categories means all; narrow after the pilot and freeze the protocol.
+categories: []
+min_liquidity: 1000
+min_volume: 1000
+min_price: 0.02
+max_price: 0.98
+exclude_question_patterns:
+  - '(?i)up or down.*(5|15) min'
+require_open: true

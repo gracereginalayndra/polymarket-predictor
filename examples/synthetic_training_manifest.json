@@ -1,0 +1,386 @@
+{
+  "code_hash": "10d861f73ffa21885299a312512865fcc9016a799038b630aa2ec55aec64dd1d",
+  "config_hash": "65c58b8c2d619f45679bd82fc3b7e4900f71073b61eede4b7f36e996932cf826",
+  "created_at": 1793112835,
+  "excluded_incomplete_training_rows": 0,
+  "excluded_incomplete_validation_rows": 0,
+  "fit_asof": 1759449600,
+  "parameters": {
+    "bayesian_correction": {
+      "beta": [
+        0.08775748391501731,
+        0.30027723204557005
+      ],
+      "covariance": [
+        [
+          0.05344883702022944,
+          0.004581277632673225
+        ],
+        [
+          0.004581277632673227,
+          0.051276408398306494
+        ]
+      ],
+      "prior_sd": 1.0,
+      "warning": "Working-likelihood Laplace intervals; not calibrated event-probability bounds."
+    },
+    "hybrid_no_social": {
+      "coefficients_scaled": [
+        0.8441534016526796,
+        0.12751040611402314,
+        0.0,
+        2.5683068752100215e-18,
+        0.0,
+        2.798508614429756e-15,
+        3.498135768037195e-16,
+        0.021907359881344266,
+        0.34321048893809136
+      ],
+      "columns": [
+        "logit_market",
+        "price_change_24h",
+        "missing_history",
+        "spread",
+        "missing_spread",
+        "log_volume",
+        "log_liquidity",
+        "horizon_hours",
+        "logit_multi_no_social"
+      ],
+      "feature_mean": [
+        0.2196665593961876,
+        -0.0008174840760593372,
+        0.0,
+        0.020000000000000018,
+        0.0,
+        10.819798284210272,
+        9.210440366976515,
+        96.0,
+        0.1528979244823635
+      ],
+      "feature_scale": [
+        1.2953398339008468,
+        0.029244440535367552,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        72.0,
+        0.5546385554761465
+      ],
+      "intercept": 0.25964936816156
+    },
+    "hybrid_single": {
+      "coefficients_scaled": [
+        0.5330955880436955,
+        0.07309162840878472,
+        0.0,
+        1.3269413110048226e-18,
+        0.0,
+        7.78369098993743e-16,
+        9.729613737421787e-17,
+        0.006783582838653057,
+        0.3182684736144207
+      ],
+      "columns": [
+        "logit_market",
+        "price_change_24h",
+        "missing_history",
+        "spread",
+        "missing_spread",
+        "log_volume",
+        "log_liquidity",
+        "horizon_hours",
+        "logit_single_agent_rag"
+      ],
+      "feature_mean": [
+        0.2196665593961876,
+        -0.0008174840760593372,
+        0.0,
+        0.020000000000000018,
+        0.0,
+        10.819798284210272,
+        9.210440366976515,
+        96.0,
+        0.06600058470944989
+      ],
+      "feature_scale": [
+        1.2953398339008468,
+        0.029244440535367552,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        72.0,
+        0.6929805048444269
+      ],
+      "intercept": 0.2385392051557829
+    },
+    "hybrid_unverified": {
+      "coefficients_scaled": [
+        0.5320019879255102,
+        0.07383169657237146,
+        0.0,
+        1.2874217536528672e-18,
+        0.0,
+        7.830886518719971e-16,
+        9.788608148399964e-17,
+        0.006654442533363161,
+        0.3191939491056429
+      ],
+      "columns": [
+        "logit_market",
+        "price_change_24h",
+        "missing_history",
+        "spread",
+        "missing_spread",
+        "log_volume",
+        "log_liquidity",
+        "horizon_hours",
+        "logit_multi_unverified"
+      ],
+      "feature_mean": [
+        0.2196665593961876,
+        -0.0008174840760593372,
+        0.0,
+        0.020000000000000018,
+        0.0,
+        10.819798284210272,
+        9.210440366976515,
+        96.0,
+        0.02538005353122159
+      ],
+      "feature_scale": [
+        1.2953398339008468,
+        0.029244440535367552,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        72.0,
+        0.31360520091956967
+      ],
+      "intercept": 0.23735903904563
+    },
+    "hybrid_verified": {
+      "coefficients_scaled": [
+        0.8371306551836029,
+        0.1083594137475693,
+        0.0,
+        2.929738582948748e-18,
+        0.0,
+        2.82536282211834e-15,
+        3.531703527647925e-16,
+        0.01748846168270402,
+        0.3416952585093565
+      ],
+      "columns": [
+        "logit_market",
+        "price_change_24h",
+        "missing_history",
+        "spread",
+        "missing_spread",
+        "log_volume",
+        "log_liquidity",
+        "horizon_hours",
+        "logit_multi_verified"
+      ],
+      "feature_mean": [
+        0.2196665593961876,
+        -0.0008174840760593372,
+        0.0,
+        0.020000000000000018,
+        0.0,
+        10.819798284210272,
+        9.210440366976515,
+        96.0,
+        0.03636351583179187
+      ],
+      "feature_scale": [
+        1.2953398339008468,
+        0.029244440535367552,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        72.0,
+        0.491885009671128
+      ],
+      "intercept": 0.26598045510738194
+    },
+    "market_calibrated": {
+      "coefficients_scaled": [
+        1.0330055485623348
+      ],
+      "columns": [
+        "logit_market"
+      ],
+      "feature_mean": [
+        0.21966655939618765
+      ],
+      "feature_scale": [
+        1.2953398339008466
+      ],
+      "intercept": 0.26120572720562935
+    },
+    "stat_logreg": {
+      "coefficients_scaled": [
+        0.9691361992903209,
+        0.11335183904906845,
+        0.0,
+        2.7626003773496367e-18,
+        0.0,
+        3.059601558996251e-15,
+        3.8245019487453137e-16,
+        0.030464203712222627
+      ],
+      "columns": [
+        "logit_market",
+        "price_change_24h",
+        "missing_history",
+        "spread",
+        "missing_spread",
+        "log_volume",
+        "log_liquidity",
+        "horizon_hours"
+      ],
+      "feature_mean": [
+        0.2196665593961876,
+        -0.0008174840760593372,
+        0.0,
+        0.020000000000000018,
+        0.0,
+        10.819798284210272,
+        9.210440366976515,
+        96.0
+      ],
+      "feature_scale": [
+        1.2953398339008468,
+        0.029244440535367552,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        72.0
+      ],
+      "intercept": 0.25663535180786334
+    }
+  },
+  "purged_groups": 4,
+  "run_id": "229b9a823f57a3bac664d32ecaaf4b279cb107384fb582aae023df525de7924f",
+  "selection": {
+    "hybrid_no_social": {
+      "grid": [
+        {
+          "C": 0.1,
+          "validation_brier": 0.22529031544826975
+        },
+        {
+          "C": 1.0,
+          "validation_brier": 0.22084089166104112
+        },
+        {
+          "C": 10.0,
+          "validation_brier": 0.22085197829807385
+        }
+      ],
+      "selected_C": 1.0
+    },
+    "hybrid_single": {
+      "grid": [
+        {
+          "C": 0.1,
+          "validation_brier": 0.2266268733134402
+        },
+        {
+          "C": 1.0,
+          "validation_brier": 0.22675965142337592
+        },
+        {
+          "C": 10.0,
+          "validation_brier": 0.2281148180393707
+        }
+      ],
+      "selected_C": 0.1
+    },
+    "hybrid_unverified": {
+      "grid": [
+        {
+          "C": 0.1,
+          "validation_brier": 0.2256593202017774
+        },
+        {
+          "C": 1.0,
+          "validation_brier": 0.22775195643162874
+        },
+        {
+          "C": 10.0,
+          "validation_brier": 0.2294298155912587
+        }
+      ],
+      "selected_C": 0.1
+    },
+    "hybrid_verified": {
+      "grid": [
+        {
+          "C": 0.1,
+          "validation_brier": 0.22634291124344555
+        },
+        {
+          "C": 1.0,
+          "validation_brier": 0.22592135036099956
+        },
+        {
+          "C": 10.0,
+          "validation_brier": 0.22684235426701108
+        }
+      ],
+      "selected_C": 1.0
+    },
+    "market_calibrated": {
+      "grid": [
+        {
+          "C": 0.1,
+          "validation_brier": 0.21767059125531127
+        },
+        {
+          "C": 1.0,
+          "validation_brier": 0.2089561675170988
+        },
+        {
+          "C": 10.0,
+          "validation_brier": 0.20870094478563525
+        }
+      ],
+      "selected_C": 10.0
+    },
+    "stat_logreg": {
+      "grid": [
+        {
+          "C": 0.1,
+          "validation_brier": 0.2189544094858629
+        },
+        {
+          "C": 1.0,
+          "validation_brier": 0.2122579087826067
+        },
+        {
+          "C": 10.0,
+          "validation_brier": 0.21258886305090904
+        }
+      ],
+      "selected_C": 1.0
+    }
+  },
+  "source_kind": "synthetic",
+  "status": "SYNTHETIC_DEMONSTRATION_ONLY",
+  "test_groups": 49,
+  "train_groups": 59,
+  "trained_snapshot_hash": "5c684108dc954091fc9b68d0d3f53853461b09f82ed53ca23cba5c70b6a66138",
+  "validation_groups": 28
+}

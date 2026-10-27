@@ -1,0 +1,29 @@
+{
+  "dependency_check": "pip check passed",
+  "notes": [
+    "Python 3.12 tested locally; Python 3.10 CI configured but not executed here.",
+    "No GitHub repository was pushed."
+  ],
+  "offline_integration": "passed",
+  "real_llm_calls": 0,
+  "real_market_snapshots": 2,
+  "real_news_documents": 44,
+  "real_trained_models": 0,
+  "runtime": {
+    "packages": {
+      "PyYAML": "6.0.2",
+      "joblib": "1.4.2",
+      "matplotlib": "3.9.2",
+      "numpy": "1.26.4",
+      "pandas": "2.2.3",
+      "scikit-learn": "1.5.2",
+      "scipy": "1.13.1"
+    },
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "python": "3.12.14"
+  },
+  "source_hash": "10d861f73ffa21885299a312512865fcc9016a799038b630aa2ec55aec64dd1d",
+  "synthetic_trained_models": 7,
+  "tests_passed": 36,
+  "verified_date": "2026-10-27"
+}

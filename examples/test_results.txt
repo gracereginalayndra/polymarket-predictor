@@ -1,0 +1,41 @@
+test_cache_budget_and_replicates (test_agents.AgentTests.test_cache_budget_and_replicates) ... ok
+test_context_excludes_outcome_market (test_agents.AgentTests.test_context_excludes_outcome_market) ... ok
+test_hallucinated_citation (test_agents.AgentTests.test_hallucinated_citation) ... ok
+test_mock_cannot_run_as_real (test_agents.AgentTests.test_mock_cannot_run_as_real) ... ok
+test_probability_validation (test_agents.AgentTests.test_probability_validation) ... ok
+test_synthetic_signal_sentence_punctuation (test_agents.AgentTests.test_synthetic_signal_sentence_punctuation) ... ok
+test_document_first_observation_preserved (test_contracts.ContractTests.test_document_first_observation_preserved) ... ok
+test_real_chat_adapter_fixture (test_contracts.ContractTests.test_real_chat_adapter_fixture) ... ok
+test_repeated_history_cursor_refused (test_contracts.ContractTests.test_repeated_history_cursor_refused) ... ok
+test_milliseconds_rejected (test_ingestion.IngestionTests.test_milliseconds_rejected) ... ok
+test_naive_timestamp_rejected (test_ingestion.IngestionTests.test_naive_timestamp_rejected) ... ok
+test_one_sided_book (test_ingestion.IngestionTests.test_one_sided_book) ... ok
+test_rss_is_observed_not_publication_asof (test_ingestion.IngestionTests.test_rss_is_observed_not_publication_asof) ... ok
+test_settlement_excluded (test_ingestion.IngestionTests.test_settlement_excluded) ... ok
+test_unsorted_orderbook (test_ingestion.IngestionTests.test_unsorted_orderbook) ... ok
+test_yes_token_not_first (test_ingestion.IngestionTests.test_yes_token_not_first) ... ok
+test_calibration_endpoints (test_metrics.MetricsTests.test_calibration_endpoints) ... ok
+test_cluster_not_row_count (test_metrics.MetricsTests.test_cluster_not_row_count) ... ok
+test_invalid_predictions (test_metrics.MetricsTests.test_invalid_predictions) ... ok
+test_known_brier (test_metrics.MetricsTests.test_known_brier) ... ok
+test_log_loss_extremes (test_metrics.MetricsTests.test_log_loss_extremes) ... ok
+test_paired_identical (test_metrics.MetricsTests.test_paired_identical) ... ok
+test_bayesian_finite_and_intervals (test_models.ModelTests.test_bayesian_finite_and_intervals) ... ok
+test_logistic_one_class_refused (test_models.ModelTests.test_logistic_one_class_refused) ... ok
+test_archive_can_be_ingested_later (test_no_lookahead.LeakageTests.test_archive_can_be_ingested_later) ... ok
+test_equal_event_weights (test_no_lookahead.LeakageTests.test_equal_event_weights) ... ok
+test_faked_available_timestamp (test_no_lookahead.LeakageTests.test_faked_available_timestamp) ... ok
+test_future_training_labels (test_no_lookahead.LeakageTests.test_future_training_labels) ... ok
+test_groups_straddling_split_purged (test_no_lookahead.LeakageTests.test_groups_straddling_split_purged) ... ok
+test_old_publication_new_observation (test_no_lookahead.LeakageTests.test_old_publication_new_observation) ... ok
+test_settlement_rejected (test_no_lookahead.LeakageTests.test_settlement_rejected) ... ok
+test_unmatured_group_purged (test_no_lookahead.LeakageTests.test_unmatured_group_purged) ... ok
+test_full_pipeline_and_resume (test_pipeline.PipelineTests.test_full_pipeline_and_resume) ... ok
+test_retrieval_asof (test_snapshots.SnapshotTests.test_retrieval_asof) ... ok
+test_snapshot_count_and_idempotence (test_snapshots.SnapshotTests.test_snapshot_count_and_idempotence) ... ok
+test_stale_price_exclusion (test_snapshots.SnapshotTests.test_stale_price_exclusion) ... ok
+
+----------------------------------------------------------------------
+Ran 36 tests in 3.096s
+
+OK

@@ -1,0 +1,165 @@
+{
+  "baselines": {
+    "blocking_reason": "Split dates are not configured",
+    "config_hash": "7b802e3b062b12025228278796d1309493af812f0da42d9f3ff25da4358bf006",
+    "rows": 2,
+    "source_kind": [
+      "real"
+    ],
+    "status": "RAW_BASELINES_READY_NO_FITTED_MODEL"
+  },
+  "collection_attempts": [
+    {
+      "failures": [
+        {
+          "error": "ValueError: One-sided or empty order book",
+          "identity": "6300128",
+          "stage": "quotes"
+        },
+        {
+          "error": "ValueError: One-sided or empty order book",
+          "identity": "6300129",
+          "stage": "quotes"
+        },
+        {
+          "error": "RuntimeError: Network failure at data-api.polymarket.com: URLError",
+          "identity": "6300129",
+          "stage": "history"
+        },
+        {
+          "error": "ValueError: One-sided or empty order book",
+          "identity": "6300130",
+          "stage": "quotes"
+        },
+        {
+          "error": "RuntimeError: Network failure at clob.polymarket.com: URLError",
+          "identity": "6300131",
+          "stage": "quotes"
+        },
+        {
+          "error": "RuntimeError: HTTP 503 from api.gdeltproject.org",
+          "identity": "inflation",
+          "stage": "gdelt"
+        }
+      ],
+      "finished_at": 1793111927,
+      "started_at": 1793111840,
+      "successes": [
+        {
+          "identity": "gamma",
+          "result": 4,
+          "stage": "markets"
+        },
+        {
+          "identity": "6300128",
+          "result": 0,
+          "stage": "history"
+        },
+        {
+          "identity": "6300130",
+          "result": 0,
+          "stage": "history"
+        },
+        {
+          "identity": "6300131",
+          "result": 0,
+          "stage": "history"
+        },
+        {
+          "identity": "https://feeds.bbci.co.uk/news/world/rss.xml",
+          "result": 24,
+          "stage": "rss"
+        },
+        {
+          "identity": "https://www.federalreserve.gov/feeds/press_all.xml",
+          "result": 20,
+          "stage": "rss"
+        }
+      ]
+    },
+    {
+      "failures": [
+        {
+          "error": "RuntimeError: Network failure at clob.polymarket.com: URLError",
+          "identity": "2589813",
+          "stage": "quotes"
+        },
+        {
+          "error": "RuntimeError: Network failure at clob.polymarket.com: URLError",
+          "identity": "2589814",
+          "stage": "quotes"
+        }
+      ],
+      "finished_at": 1793112681,
+      "started_at": 1793112647,
+      "successes": [
+        {
+          "identity": "gamma",
+          "result": 4,
+          "stage": "markets"
+        },
+        {
+          "identity": "2589812",
+          "result": 1,
+          "stage": "quotes"
+        },
+        {
+          "identity": "682705",
+          "result": 1,
+          "stage": "quotes"
+        }
+      ]
+    }
+  ],
+  "counts": {
+    "documents": 44,
+    "forecasts": 0,
+    "market_versions": 8,
+    "markets": 8,
+    "prices": 2,
+    "resolutions": 0,
+    "snapshots": 2
+  },
+  "dataset_build": {
+    "eligible": 2,
+    "excluded": [
+      {
+        "cutoff": 1793112851,
+        "market_id": "2589813",
+        "reason": "price_not_available_asof"
+      },
+      {
+        "cutoff": 1793112851,
+        "market_id": "2589814",
+        "reason": "price_not_available_asof"
+      },
+      {
+        "cutoff": 1793112851,
+        "market_id": "6300128",
+        "reason": "price_not_available_asof"
+      },
+      {
+        "cutoff": 1793112851,
+        "market_id": "6300129",
+        "reason": "price_not_available_asof"
+      },
+      {
+        "cutoff": 1793112851,
+        "market_id": "6300130",
+        "reason": "price_not_available_asof"
+      },
+      {
+        "cutoff": 1793112851,
+        "market_id": "6300131",
+        "reason": "price_not_available_asof"
+      }
+    ]
+  },
+  "limits": [
+    "No LLM credentials were available; no live LLM calls were made.",
+    "No final outcomes collected; no real supervised model fitted.",
+    "Data v2 history returned empty pages or network errors on the sampled newly created markets.",
+    "GDELT returned HTTP 503; two RSS sources succeeded."
+  ],
+  "status": "REAL_CONNECTIVITY_PILOT_NOT_FINAL_RESEARCH_DATASET"
+}
