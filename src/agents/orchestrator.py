@@ -8,6 +8,7 @@ from src.common import canonical, digest, timestamp, utcnow, write_json, source_
 from src.dataset.leakage_checks import check_evidence
 from src.db.loaders import insert, event
 from src.retrieval.temporal_retriever import retrieve
+from src.retrieval.relevance import require_relevant_evidence
 
 SYSTEMS = ['news_agent', 'base_rate_agent', 'llm_no_retrieval', 'single_agent_rag',
            'single_agent_kx', 'multi_unverified', 'multi_verified', 'multi_no_social']
@@ -61,6 +62,7 @@ def run_agents(con, data, cfg):
             if not con.execute('SELECT 1 FROM forecasts WHERE forecast_id=?', (record['forecast_id'],)).fetchone():
                 insert(con, 'forecasts', record)
         try:
+            require_relevant_evidence(snapshot, docs)
             if snapshot['source_kind'] != 'synthetic':
                 age = utcnow()-cutoff
                 if age > cfg['llm'].get('max_forecast_delay_seconds', 900):

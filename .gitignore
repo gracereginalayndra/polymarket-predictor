@@ -12,3 +12,9 @@ artifacts/
 *.egg-info/
 build/
 dist/
+
+# Local environment and patch backups
+.myvenv/
+backups/
+retrieval_fix.py
+HX2605_retrieval_fix.py

@@ -3,6 +3,7 @@ from collections import Counter
 from src.dataset.leakage_checks import check_evidence
 from src.retrieval.embedder import embedder
 from src.retrieval.index import eligible_documents
+from src.retrieval.relevance import rejection_reason, relevance_profile
 
 
 def retrieve(con, snapshot, cfg, include_social=None):
@@ -11,10 +12,13 @@ def retrieve(con, snapshot, cfg, include_social=None):
     candidates = eligible_documents(con, int(snapshot['cutoff']), cfg['dataset']['lookback_days'],
                                     snapshot['source_kind'], include_social)
     check_evidence(candidates, snapshot['cutoff'], snapshot['source_kind'])
+    candidates = [{**d, 'body': d['body'][:settings['max_chars']]} for d in candidates]
+    candidates = [d for d in candidates if rejection_reason(snapshot, d) is None]
     if not candidates:
         return []
     vectorizer = embedder()
-    query = snapshot['question'] + ' ' + snapshot['rules'][:1200]
+    # For the supported topic, settlement boilerplate must not drive ranking.
+    query = snapshot['question'] if relevance_profile(snapshot) else snapshot['question'] + ' ' + snapshot['rules'][:1200]
     matrix = vectorizer.transform([d['title']+' '+d['body'] for d in candidates])
     scores = (matrix @ vectorizer.transform([query]).T).toarray().ravel()
     chosen, hashes, domains = [], set(), Counter()
